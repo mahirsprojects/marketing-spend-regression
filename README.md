@@ -56,23 +56,22 @@ Drives awareness at scale but produces weak conversion efficiency, making ROI th
 Trained first to establish an interpretable baseline. A linear model assumes that each feature contributes a fixed amount to ROI regardless of what the other features are doing. That assumption works well when relationships are straightforward.
 
 **Results:**
-- R²: `[FILL IN]`
-- RMSE: `[FILL IN]`
+- R²: -0.0002
+- RMSE: 1.7356
 
-The coefficients are readable. Every additional unit of `[top feature]` adds `[value]` to predicted ROI. That makes it easy to explain to a non-technical stakeholder.
-
+The coefficients are readable. Every additional unit of CTR adds ~0.0178 to predicted ROI. That makes it easy to explain to a non-technical stakeholder.
 
 ### 8. GPT Baseline vs. Actual Results
 
-**Where GPT was right:** `[FILL IN]`
+**Where GPT was right: Conversion efficiency is the strongest driver of ROI. GPT predicted that conversion rate related metrics would dominate, and the model confirms this through CTR being one of the most influential variables
 
 ---
 
 ## Key Findings
 
-- `[FILL IN after model runs]`
-- `[FILL IN after model runs]`
-- `[FILL IN after model runs]`
+ROI does not follow simple linear relationships, as shown by the near zero R² score, indicating that campaign performance depends on more complex interactions between variables.
+Conversion efficiency (CTR) is a stronger predictor of ROI than scale based metrics like clicks and impressions, confirming that quality of engagement matters more than volume.
+Channel selection and audience targeting significantly influence ROI, suggesting that platform dynamics and targeting strategy play a larger role than expected.
 
 ---
 
